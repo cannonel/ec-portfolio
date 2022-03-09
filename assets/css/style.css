@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #409169;
+}
+header {
+    background-color: #409169;
+}
+
+header h1 {
+    color:bisque;
+    font: 
+}
+
+.hero {
+    background-image: url("../assets/images/twigs-hero.jpg");
+}
