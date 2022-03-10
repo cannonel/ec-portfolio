@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #409169;
+    background-color: #191b22;
     font-family: Arial, Helvetica, sans-serif;
 }
 header {
     padding: 25px 25px;
-    background-color: #409169;
+    background-color: #191b22;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
     display:flex;
@@ -43,17 +43,75 @@ header nav {
   header nav ul li a {
     padding: 10px 15px;
     margin: 10px,10px,10px,10px;
-    font-size: 1.55vw;
+    font-size: 1.75vw;
     text-shadow: 0 0 10px;
     text-decoration: none;  
   }
   
 header nav ul li a:hover {
-    background: #52554d;
+    background: #8f926f;
     border-radius: 5px;
     text-shadow: none;
 }
 
 .hero {
-    background-image: url("../images/floral-hero.jpg");
+    background-image: url(../images/floral-hero.jpg);
+    height: 350px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*section titles styling*/
+
+.section-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: bisque;
+    padding: 20px 20px 20px 20px;
+    display:inline
+}
+
+.bio {
+    border: 1px solid black;
+    margin: 5rem;
+    padding: 8rem 3rem;
+   
+    
+}
+
+.bio h2 p {
+    display: inline-block;
+    vertical-align:middle;
+}
+.bio p {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 0 20px 15px;
+    float: right;
+    color: bisque;
+}
+
+/* my work section start */
+
+.projects {
+    border: 1px solid black;
+    margin: 5rem;
+    padding: 8rem 3rem;
+}
+
+/* connect section start */
+
+.connect {
+    border: 1px solid black;
+    margin: 5rem;
+    padding: 8rem 3rem;
+}
+.connect a {
+    text-decoration: none;
+    font-size: 20px;
+    
+    padding: 0 0 20px 15px;
+    
+    color: bisque;
 }
