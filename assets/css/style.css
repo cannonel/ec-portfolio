@@ -5,16 +5,55 @@
 }
 body {
     background-color: #409169;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header {
+    padding: 25px 25px;
     background-color: #409169;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    z-index: 9999;
+    text-decoration: none;
 }
 
 header h1 {
     color:bisque;
-    font: 
+}
+
+header a {
+    text-decoration: none;
+    color: bisque;
+}
+
+header nav {
+    margin: 7px 0;
+  }
+ 
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  header nav ul li a {
+    padding: 10px 15px;
+    margin: 10px,10px,10px,10px;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px;
+    text-decoration: none;  
+  }
+  
+header nav ul li a:hover {
+    background: #52554d;
+    border-radius: 5px;
+    text-shadow: none;
 }
 
 .hero {
-    background-image: url("../assets/images/twigs-hero.jpg");
+    background-image: url("../images/floral-hero.jpg");
 }
