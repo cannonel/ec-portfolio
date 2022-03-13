@@ -1,4 +1,3 @@
-# ec-portfolio
 # Portfolio
 
 ## Purpose
