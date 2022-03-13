@@ -73,21 +73,26 @@ header nav ul li a:hover {
 }
 
 .bio {
-    border: 1px solid black;
+    border: 3px solid black;
     margin: 5rem;
     padding: 8rem 3rem;
-   
-    
+    flex-direction: row;
+    display: flex;
 }
 
-.bio h2 p {
-    display: inline-block;
-    vertical-align:middle;
+.bio h2 {
+    float: left;
+}
+
+.profile-img {
+    flex: 20 12%;
+    margin-right: 20px;
+    flex-wrap: wrap;
+
 }
 .bio p {
     font-size: 20px;
-    text-align: center;
-    padding: 0 0 20px 15px;
+    padding: 0 0 35px 15px;
     float: right;
     color: bisque;
 }
@@ -95,7 +100,7 @@ header nav ul li a:hover {
 /* my work section start */
 
 .projects {
-    border: 1px solid black;
+    border: 3px solid black;
     margin: 5rem;
     padding: 8rem 3rem;
 }
@@ -103,15 +108,13 @@ header nav ul li a:hover {
 /* connect section start */
 
 .connect {
-    border: 1px solid black;
+    border: 3px solid black;
     margin: 5rem;
     padding: 8rem 3rem;
 }
 .connect a {
     text-decoration: none;
     font-size: 20px;
-    
     padding: 0 0 20px 15px;
-    
     color: bisque;
 }
