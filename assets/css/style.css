@@ -112,10 +112,17 @@ header nav ul li a:hover {
     flex: 20 12%;
 }
    
-
  #run-buddy {
     max-width: 90%;
     padding-left: 20px;
+}
+
+.project-screenshots img:hover {
+    opacity: 60%;
+}
+
+#run-buddy:hover {
+    opacity: 60%;
 }
 
 /* connect section start */
@@ -136,3 +143,93 @@ header nav ul li a:hover {
     color: bisque;
     float: right;
 }
+
+/*Media querries*/
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+    header h1 {
+     width: 100%;
+     text-align: center;
+   }
+   
+   header nav ul {
+     margin-top: 20px;
+     width: 100%;
+     justify-content: center;
+   }
+   
+   header nav ul li a {
+     font-size: 20px;
+   }
+   
+   .section-title {
+     width: 80%;
+     text-align: center;
+   }
+   
+   .bio, .connect, .projects{
+     flex: 0 70%;
+     flex-direction: column;
+     text-align: center;
+     justify-content: center;
+   }
+
+   
+   
+   }
+   
+   /*media query for 768px */
+   @media screen and (max-width: 768px) {
+     section {
+       padding: 30px 15px;
+     }
+     
+   
+     .bio .connect .projects {
+       flex: 1 100%;
+       text-align: center;
+     }
+   
+   
+   
+     .project-screenshots img {
+       flex: 0 32%;
+       margin-right: 0;
+       margin-top: 15px;
+       margin-bottom: 15px;
+     }
+   
+    
+   }
+   /*media query for 575px */
+   @media screen and (max-width: 575px) {
+   
+     .section-title {
+       width: 95%;
+     }
+   
+     .bio p {
+       width: 100%;
+     }
+   
+     .bio .projects .connect {
+       flex: 0 100%;
+     }
+   
+     .contact-info {
+       text-align: center;
+       opacity: 0.5;
+     }
+   
+     .contact-info > * {
+       flex: 0 100%;
+     }
+   
+     .contact-form {
+       order: 3;
+     }
+   }
