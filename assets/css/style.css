@@ -37,7 +37,7 @@ header nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    
     list-style: none;
   }
   header nav ul li a {
@@ -71,165 +71,186 @@ header nav ul li a:hover {
     padding: 20px 20px 20px 20px;
     
 }
-
 .bio {
-    border: 3px solid black;
-    margin: 5rem;
-    padding: 4rem 3rem;
-    flex-direction: row;
-    display: flex;
-    flex: 20 12%;
+  border: 3px solid black;
+  border-radius: 15px;
+  margin: 5rem;
+  padding: 4rem 3rem;
+  flex-direction: row;
+  display: flex;
+  flex: 20 12%;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .bio h2 {
-    float: left;
+  padding-right: 100px;
 }
 
 .profile-img {
-    flex: 20 12%;
-    margin-right: 20px;
-    flex-wrap: wrap;
+  flex: 20 12%;
+  margin-right: 20px;
+  flex-wrap: wrap;
 
 }
+
 .bio p {
-    font-size: 20px;
-    padding: 0 0 35px 15px;
-    float: right;
-    color: bisque;
+  font-size: 20px;
+  padding: 0 0 35px 15px;
+  float: right;
+  color: bisque;
 }
 
 /* my work section start */
 
 .projects {
-    border: 3px solid black;
-    margin: 5rem;
-    padding: 4rem 3rem;
-    display: flex;
-    flex-direction: row;
-}
-.project-screenshots img {
-    max-width: 75%;
-    flex: 20 12%;
-}
-   
- #run-buddy {
-    max-width: 90%;
-    padding-left: 20px;
+  border: 3px solid black;
+  border-radius: 15px;
+  margin: 5rem;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
+.projects h2 {
+  padding-right: 100px;
+}
+
+.project-screenshots img {
+  max-width: 75%;
+  flex: 20 12%;
+}
+
+
 .project-screenshots img:hover {
-    opacity: 60%;
+  opacity: 60%;
 }
 
 #run-buddy:hover {
-    opacity: 60%;
+  opacity: 60%;
 }
 
 /* connect section start */
 
 .connect {
-    border: 3px solid black;
-    margin: 5rem;
-    padding: 4rem 3rem;
-    display: flex;
-    flex-direction: row;
-    flex: 20 12%;
+  border: 3px solid black;
+  border-radius: 15px;
+  margin: 5rem;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: row;
+  flex: 20 12%;
+  align-items: center;
+  justify-content: space-around;
 
 }
+
 .connect a {
-    text-decoration: none;
-    font-size: 20px;
-    padding: 0 0 20px 50px;
-    color: bisque;
-    float: right;
+  padding: 10px 15px;
+  margin: 10px, 10px, 10px, 10px;
+  font-size: 1.25vw;
+  text-decoration: none;
+  color: bisque;
+  float: right;
+}
+
+.connect a:hover {
+  background: #8f926f;
+  border-radius: 5px;
+  text-shadow: none;
 }
 
 /*Media querries*/
 @media screen and (max-width: 980px) {
-    header {
-      padding-bottom: 0;
-      justify-content: center;
-      position: relative;
-    }
-    header h1 {
-     width: 100%;
-     text-align: center;
-   }
-   
-   header nav ul {
-     margin-top: 20px;
-     width: 100%;
-     justify-content: center;
-   }
-   
-   header nav ul li a {
-     font-size: 20px;
-   }
-   
-   .section-title {
-     width: 80%;
-     text-align: center;
-   }
-   
-   .bio, .connect, .projects{
-     flex: 0 70%;
-     flex-direction: column;
-     text-align: center;
-     justify-content: center;
-   }
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
 
-   
-   
-   }
-   
-   /*media query for 768px */
-   @media screen and (max-width: 768px) {
-     section {
-       padding: 30px 15px;
-     }
-     
-   
-     .bio .connect .projects {
-       flex: 1 100%;
-       text-align: center;
-     }
-   
-   
-   
-     .project-screenshots img {
-       flex: 0 32%;
-       margin-right: 0;
-       margin-top: 15px;
-       margin-bottom: 15px;
-     }
-   
-    
-   }
-   /*media query for 575px */
-   @media screen and (max-width: 575px) {
-   
-     .section-title {
-       width: 95%;
-     }
-   
-     .bio p {
-       width: 100%;
-     }
-   
-     .bio .projects .connect {
-       flex: 0 100%;
-     }
-   
-     .contact-info {
-       text-align: center;
-       opacity: 0.5;
-     }
-   
-     .contact-info > * {
-       flex: 0 100%;
-     }
-   
-     .contact-form {
-       order: 3;
-     }
-   }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  .section-title {
+    width: 80%;
+    text-align: center;
+  }
+
+  .bio,
+  .connect,
+  .projects {
+    flex: 0 70%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+
+
+}
+
+/*media query for 768px */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+
+  .bio .connect .projects {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+
+  .project-screenshots img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+
+}
+
+/*media query for 575px */
+@media screen and (max-width: 575px) {
+
+  .section-title {
+    width: 95%;
+  }
+
+  .bio p {
+    width: 100%;
+  }
+
+  .bio .projects .connect {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+    opacity: 0.5;
+  }
+
+  .contact-info>* {
+    flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
+  }
+}
